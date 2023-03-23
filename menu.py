@@ -67,7 +67,17 @@ def iniciar():
        rect = Rectangulo(P_inicial= P, P_final= Q)
        return rect.base()
     elif opcion == "7":
-       print("Consultando base del rectangulo...\n")
+       print("Consultando Altura del rectangulo...\n")
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       rect = Rectangulo(P_inicial= P, P_final= Q)
+       return rect.altura()
+    elif opcion == "8":   
+       print("Consultando Area del rectangulo...\n")
        x1 = input("Introduzca la coordenada x de su punto:")
        y1 = input("Introduzca la coordenada y de su punto:")
        P = Punto(x1, y1)
@@ -76,8 +86,6 @@ def iniciar():
        Q = Punto(x2,y2)
        rect = Rectangulo(P_inicial= P, P_final= Q)
        return rect.base()
-    elif opcion == "8":   
-
 
 
 
