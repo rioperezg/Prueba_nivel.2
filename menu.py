@@ -57,8 +57,26 @@ def iniciar():
        print("Rectangulo creado")
        return rect.__str__()
     elif opcion == "6":
-
+       print("Consultando base del rectangulo...\n")
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       rect = Rectangulo(P_inicial= P, P_final= Q)
+       return rect.base()
     elif opcion == "7":
+       print("Consultando base del rectangulo...\n")
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       rect = Rectangulo(P_inicial= P, P_final= Q)
+       return rect.base()
+    elif opcion == "8":   
 
 
 
