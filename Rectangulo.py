@@ -14,3 +14,9 @@ class Rectangulo:
         comp_x_fin = self.P_final.x
         print("La base del rectangulo forma por los puntos:({},{}) y ({},{})".format(self.P_inicial.x, self.P_inicial.y, self.P_final.x, self.P_final.y)) 
         return abs(comp_x_ini - comp_x_fin)
+    def altura(self):
+        comp_y_ini = self.P_inicial.y
+        comp_y_fin = self.P_final.y
+        print("La Altura del rectangulo forma por los puntos:({},{}) y ({},{})".format(self.P_inicial.x, self.P_inicial.y, self.P_final.x, self.P_final.y)) 
+        return abs(comp_y_ini - comp_y_fin)
+    
