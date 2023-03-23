@@ -17,4 +17,10 @@ class Punto:
                 return "El punto se encuentra sobre el eje x"
         elif self.x < 0:
             if self.y > 0:
-                return "El punto pertenece al "       
+                return "El punto pertenece al segundo cuadrante"
+            elif self.y < 0:
+                return "El punto pertenece al tercer cuadrante"
+            else:
+                return "El punto se encuentra sobre el eje x"
+        else:
+            return "El punto se encuentra sobre el eje y"       
