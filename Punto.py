@@ -32,5 +32,9 @@ class Punto:
         self.componente_y = componente_y
         print("Vector formado por los puntos:({},{}) y ({},{})".format(self.x, self.y, other.x, other.y))
         return "({},{})".format(componente_x, componente_y)
-    def distancia(self):
-        return math.sqrt()
+    def distancia(self, other):
+        componente_x = self.x - other.x
+        componente_y = self.y - other.y
+        self.componente_x = componente_x
+        self.componente_y = componente_y
+        return math.sqrt((componente_x)^2 + (componente_y)^2)
