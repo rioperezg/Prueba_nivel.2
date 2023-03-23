@@ -9,5 +9,8 @@ class Rectangulo:
             P_final = Punto()
             self.P_inicial = P_inicial
             self.P_final = P_final
-        
-        
+    def base(self):        
+        comp_x_ini = self.P_inicial.x
+        comp_x_fin = self.P_final.x
+        print("La base del rectangulo forma por los puntos:({},{}) y ({},{})".format(self.P_inicial.x, self.P_inicial.y, self.P_final.x, self.P_final.y)) 
+        return abs(comp_x_ini - comp_x_fin)
