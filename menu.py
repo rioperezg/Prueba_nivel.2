@@ -29,12 +29,22 @@ def iniciar():
        return P.cuadrante()
     elif opcion == "3":
        print("Creando vectores...\n")
-       x = input("Introduzca la coordenada x de su punto:")
-       y = input("Introduzca la coordenada y de su punto:")
-       P = Punto(x, y)
-       return P.vector()
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       return Punto.vector(self = P, other = Q)
     elif opcion == "4":        
-
+       print("Consultando distancia...\n")
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       return Punto.distancia(self = P, other = Q)
     elif opcion == "5":
 
     elif opcion == "6":
