@@ -10,6 +10,8 @@ class Rectangulo:
             P_final = Punto()
             self.P_inicial = P_inicial
             self.P_final = P_final
+    def __str__(self):
+        return "Rectangulo formado por -- {} y -- {}".format(self.P_inicial.__str__(), self.P_final.__str__())
     def base(self):        
         comp_x_ini = self.P_inicial.x
         comp_x_fin = self.P_final.x

@@ -46,7 +46,16 @@ def iniciar():
        Q = Punto(x2,y2)
        return Punto.distancia(self = P, other = Q)
     elif opcion == "5":
-
+       print("Creando Rectangulo...\n")
+       x1 = input("Introduzca la coordenada x de su punto:")
+       y1 = input("Introduzca la coordenada y de su punto:")
+       P = Punto(x1, y1)
+       x2 = input("Introduzca la coordenada x del otro punto:")
+       y2 = input("Introduzca la coordenada y del otro punto:")
+       Q = Punto(x2,y2)
+       rect = Rectangulo(P_inicial= P, P_final= Q)
+       print("Rectangulo creado")
+       return rect.__str__()
     elif opcion == "6":
 
     elif opcion == "7":
